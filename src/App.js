@@ -27,8 +27,7 @@ export default function App() {
           transition={{ duration: 1 }}
           className="fixed bottom-4 left-4 bg-white border-4 border-purple-400 rounded-2xl shadow-xl p-4 w-96 flex"
         >
-          <img
-            src="/bucko.png"
+            <img src="/bucko.png" alt="Bucko helper" className="w-20 h-20" />
             alt="Bucko helper"
             className="w-24 h-24 mr-4 object-contain"
           />
