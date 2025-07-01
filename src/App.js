@@ -29,7 +29,7 @@ export default function App() {
         >
            <img src="/Bucko.png" alt="Bucko helper" className="w-40 h-40 object-contain" />
             
-          />
+         
           <div>
             <p className="text-gray-800 font-medium">
               Ćao ja sam Bucko! 🐾<br />
