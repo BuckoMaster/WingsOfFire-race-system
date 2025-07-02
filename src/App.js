@@ -1,62 +1,24 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Layout from './Layout';
+import Rase from './pages/Rase';
+import Kviz from './pages/Kviz';
+import Beleske from './pages/Beleske';
+import Karakter from './pages/Karakter';
 
 export default function App() {
-  const [buckoSpeaking, setBuckoSpeaking] = useState(true);
-
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-100 to-purple-200 p-6 font-sans">
-      <motion.div
-        initial={{ opacity: 0, scale: 0.6 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1.2 }}
-        className="text-center mb-8"
-      >
-        <h1 className="text-4xl font-bold text-purple-900 drop-shadow-md">
-          Wings of Fire: Izaberi svoju rasu
-        </h1>
-        <p className="text-gray-700 mt-2 text-lg">
-          Dobrodošli u najdetaljniji sistem za upoznavanje sa rasama zmajeva!
-        </p>
-      </motion.div>
-
-      {buckoSpeaking && (
-        <motion.div
-          initial={{ y: 100, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 1 }}
-          className="fixed bottom-4 left-4 bg-white border-4 border-purple-400 rounded-2xl shadow-xl p-4 w-96 flex z-50"
-        >
-          <img
-            src="/Bucko.png"
-            alt="Bucko helper"
-            className="w-40 h-40 object-contain"
-          />
-          <div>
-            <p className="text-gray-800 font-medium">
-              Ćao ja sam Bucko! 🐾<br />
-              U ovom vodiču možeš da istražuješ sve rase zmajeva!
-              Klikni na gornji meni da biraš, a uskoro te vodim kroz kviz!
-            </p>
-            <button
-              onClick={() => setBuckoSpeaking(false)}
-              className="mt-2 text-sm text-blue-600 underline"
-            >
-              Zatvori Bucka
-            </button>
-          </div>
-        </motion.div>
-      )}
-
-      {!buckoSpeaking && (
-        <button
-          onClick={() => setBuckoSpeaking(true)}
-          className="fixed bottom-4 left-4 bg-yellow-300 hover:bg-yellow-400 transition px-4 py-2 rounded-lg shadow z-40 text-sm font-medium"
-        >
-           Otvori Bucka ponovo
-        </button>
-      )}
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" element={<Rase />} />
+          <Route path="/kviz" element={<Kviz />} />
+          <Route path="/beleske" element={<Beleske />} />
+          <Route path="/karakter" element={<Karakter />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
+
 
