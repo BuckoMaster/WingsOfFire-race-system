@@ -110,12 +110,20 @@ export default function RasaDetalji() {
         </ul>
       </section>
 
-      <section>
-        <h2 className="text-2xl font-semibold mb-2">🧩 {rasa.sistemImena.split('\n')[0]}</h2>
-        <p className="whitespace-pre-line text-gray-800">
-          {rasa.sistemImena.split('\n').slice(1).join('\n')}
-        </p>
-      </section>
+      <section className="bg-amber-50 p-6 rounded-lg shadow-sm">
+  <h2 className="text-2xl font-semibold mb-4">🎯 Zanimljivosti o Blatokrilima</h2>
+  <div className="grid sm:grid-cols-2 gap-4">
+    {rasa.zanimljivosti.map((fact, index) => (
+      <div
+        key={index}
+        className="bg-white p-4 rounded-lg shadow hover:shadow-md transition duration-300"
+      >
+        🐾 {fact}
+      </div>
+    ))}
+  </div>
+</section>
+
 
       <section className="pt-4 border-t border-gray-300">
         <h2 className="text-2xl font-semibold mb-2">🎲 Nasumično Blatokrilovo ime</h2>
