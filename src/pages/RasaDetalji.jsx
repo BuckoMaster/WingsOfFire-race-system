@@ -40,7 +40,18 @@ export default function RasaDetalji() {
 
   return (
     <div className="p-6 max-w-4xl mx-auto space-y-10">
-      <h1 className="text-4xl font-bold text-purple-700 text-center">{rasa.ime}</h1>
+      <section
+  className="relative bg-cover bg-center rounded-xl shadow-md text-white py-10 px-4 mb-8"
+  style={{ backgroundImage: "url('/images/bg-swamp.jpg')" }}
+>
+  <div className="bg-black/50 rounded-xl p-6 max-w-3xl mx-auto text-center">
+    <h1 className="text-5xl font-extrabold font-cinzel mb-2">{rasa.ime}</h1>
+    <p className="text-lg italic text-gray-200">
+      Legendarni zmajevi močvara — snaga, blato i bratstvo.
+    </p>
+  </div>
+</section>
+
 
       <img
         src="/images/races/Mudwing-Full.png"
