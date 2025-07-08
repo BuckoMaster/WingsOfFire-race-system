@@ -8,10 +8,19 @@ export default function RasaDetalji() {
   const rasa = rasaId === 'mudwing' ? mudwingData : null;
 
   const blatokrilaImena = [
-    "Glineni", "Blatneni", "Žabron", "Blatinko", "Tresetko",
-    "Trskonos", "Kijapko", "Magleni", "Muljaš", "Brčkavko",
-    "Lopočan", "Mahovnik", "Zamutić", "Mokrokljun", "Šljapavi"
-  ];
+  "Glineni", "Blatneni", "Žabron", "Blatinko", "Tresetko",
+  "Trskonos", "Kijapko", "Magleni", "Muljaš", "Brčkavko",
+  "Lopočan", "Mahovnik", "Zamutić", "Mokrokljun", "Šljapavi",
+  "Lokvanjko", "Glinavko", "Muljenko", "Blatoboj", "Zemko",
+  "Krtišan", "Peščavor", "Podzemko", "Glinobran", "Drobiljko",
+  "Bakarno", "Mokroljub", "Kapkapa", "Vlažić", "Kaputko",
+  "Muljiša", "Škrabčavko", "Klizalko", "Blatoton", "Blopkan",
+  "Žapćo", "Trskaš", "Lopočar", "Bršljan", "Grmislav",
+  "Paprak", "Šašavko", "Mahovnik II", "Cveblok", "Korenko",
+  "Trnović", "Žabran", "Kijavka", "Vretencilo", "Ribljozubić",
+  "Kvačimir", "Skakaš", "Lepljaš", "Člapko"
+];
+
 
   const [imePredlog, setImePredlog] = useState(null);
 
