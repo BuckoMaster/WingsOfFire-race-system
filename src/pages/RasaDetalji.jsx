@@ -18,7 +18,9 @@ export default function RasaDetalji() {
   "Žapćo", "Trskaš", "Lopočar", "Bršljan", "Grmislav",
   "Paprak", "Šašavko", "Mahovnik II", "Cveblok", "Korenko",
   "Trnović", "Žabran", "Kijavka", "Vretencilo", "Ribljozubić",
-  "Kvačimir", "Skakaš", "Lepljaš", "Člapko"
+  "Kvačimir", "Skakaš", "Lepljaš", "Člapko", "Blatar", "Žabren", "Žabko", "Muljar", "Čaprin",
+  "Blatimir", "Kroko", "Aligatro", "Mangrov", "Čapljar", "Vidrak", "Vidrar", "Kljunarko", "Zmijarki",
+  "Ankakondor", "Zemljko", "Trsko", "Trskili"
 ];
 
 
