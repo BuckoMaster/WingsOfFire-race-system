@@ -11,7 +11,7 @@ export default function Layout() {
     '/kviz': 'Ovo je kviz! Odgovori iskreno i saznaćeš kojoj rasi zmajeva najviše ličiš!',
     '/beleske': 'U beleškama možeš zapisivati ideje, zaplete i zmajevske misli 📝',
     '/karakter': 'Ovde kreiraš svog zmajevskog lika! Imaćeš ime, pozadinu i rasu 🐉',
-    '/rase/mudwing': 'Blatokrili možda ne mirišu na cveće, ali su verni kao stena. Ako te zovemo leglo — ti si naš zauvek.',
+    '/rase/mudwing': 'Blatokrili možda ne blistaju kao neki drugi zmajevi, ali kad ti treba neko da te izvuče iz nevolje — zovi nas. I ponesi užinu.',
     // Dodaj i druge putanje ovde kad budeš želeo!
   };
 

@@ -39,11 +39,7 @@ export default function RasaDetalji() {
         className="mx-auto w-full max-w-md rounded-md shadow-md"
       />
 
-      <div className="bg-yellow-100 border-l-4 border-yellow-500 p-4 rounded-md shadow-sm">
-        <p className="text-yellow-800 italic">
-          🐾 Bucko kaže: “Blatokrili možda ne blistaju kao neki drugi zmajevi, ali kad ti treba neko da te izvuče iz nevolje — zovi nas. I ponesi užinu.”
-        </p>
-      </div>
+  
 
       <section>
         <h2 className="text-2xl font-semibold mb-2">🧍 {rasa.opisIzgled.split('\n')[0]}</h2>
