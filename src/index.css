@@ -1,8 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@layer base {
-  body {
-    @apply font-cinzel;
-  }
+
+/* Direktno podešavanje fonta za ceo sajt */
+body {
+  font-family: 'Cinzel', serif;
 }
+

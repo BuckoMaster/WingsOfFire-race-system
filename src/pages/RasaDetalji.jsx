@@ -45,9 +45,11 @@ export default function RasaDetalji() {
   style={{ backgroundImage: "url('/images/bg-swamp.jpg')" }}
 >
   <div className="bg-black/50 rounded-xl p-6 max-w-3xl mx-auto text-center">
-    <h1 className="text-5xl font-extrabold font-cinzel text-red-500 text-center">
+    <h1 className="text-5xl font-extrabold font-cinzel text-center">
   {rasa.ime}
 </h1>
+
+
 
     <p className="text-lg italic text-gray-200">
       Legendarni zmajevi močvara — snaga, blato i bratstvo.
