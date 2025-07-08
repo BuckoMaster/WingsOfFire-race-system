@@ -106,15 +106,6 @@ export default function RasaDetalji() {
         </p>
       </section>
 
-      <section className="bg-amber-50 p-4 rounded-lg shadow-sm">
-        <h2 className="text-2xl font-semibold mb-2">🎯 Zanimljivosti o Blatokrilima</h2>
-        <ul className="list-disc list-inside space-y-1 text-gray-800">
-          {rasa.zanimljivosti.map((fact, index) => (
-            <li key={index}>{fact}</li>
-          ))}
-        </ul>
-      </section>
-
       <section className="bg-amber-50 p-6 rounded-lg shadow-sm">
   <h2 className="text-2xl font-semibold mb-4">🎯 Zanimljivosti o Blatokrilima</h2>
   <div className="grid sm:grid-cols-2 gap-4">
@@ -128,6 +119,7 @@ export default function RasaDetalji() {
     ))}
   </div>
 </section>
+
 
 
       <section className="pt-4 border-t border-gray-300">
