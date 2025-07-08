@@ -5,6 +5,7 @@ import Rase from './pages/Rase';
 import Kviz from './pages/Kviz';
 import Beleske from './pages/Beleske';
 import Karakter from './pages/Karakter';
+import RasaDetalji from './pages/RasaDetalji'; // 🆕 uvozi novu stranicu
 
 export default function App() {
   return (
@@ -15,10 +16,12 @@ export default function App() {
           <Route path="/kviz" element={<Kviz />} />
           <Route path="/beleske" element={<Beleske />} />
           <Route path="/karakter" element={<Karakter />} />
+          <Route path="/rase/:rasaId" element={<RasaDetalji />} /> {/* 🆕 nova ruta */}
         </Route>
       </Routes>
     </BrowserRouter>
   );
 }
+
 
 

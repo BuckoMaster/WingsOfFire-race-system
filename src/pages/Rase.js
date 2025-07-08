@@ -1,38 +1,45 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // ✅ dodato
 import RaceCard from '../components/RaceCard';
 
 export default function Rase() {
   const races = [
-  {
-    name: 'MudWing / Blatokrili',
-    image: '/images/races/Mudwing-Blatokrili-menu.png',
-  },
-  {
-    name: 'SeaWing / Morskokrili',
-    image: '/images/races/Seawing-Morskokrili-menu.png',
-  },
-  {
-    name: 'RainWing / Kišokrili',
-    image: '/images/races/Rainwing-Kisokrili-menu.png',
-  },
-  {
-    name: 'NightWing / Noćnokrili',
-    image: '/images/races/Nightwing-Nocnokrili-menu.png',
-  },
-  {
-    name: 'SandWing / Peskokrili',
-    image: '/images/races/Sandwing-Peskokrili-menu.png',
-  },
-  {
-    name: 'SkyWing / Nebokrili',
-    image: '/images/races/Skywing-Nebokrili-menu.png',
-  },
-  {
-    name: 'IceWing / Ledenokrili',
-    image: '/images/races/Icewing-Ledenokrili-menu.png',
-  },
-];
-
+    {
+      id: 'mudwing',
+      name: 'MudWing / Blatokrili',
+      image: '/images/races/Mudwing-Blatokrili-menu.png',
+    },
+    {
+      id: 'seawing',
+      name: 'SeaWing / Morskokrili',
+      image: '/images/races/Seawing-Morskokrili-menu.png',
+    },
+    {
+      id: 'rainwing',
+      name: 'RainWing / Kišokrili',
+      image: '/images/races/Rainwing-Kisokrili-menu.png',
+    },
+    {
+      id: 'nightwing',
+      name: 'NightWing / Noćnokrili',
+      image: '/images/races/Nightwing-Nocnokrili-menu.png',
+    },
+    {
+      id: 'sandwing',
+      name: 'SandWing / Peskokrili',
+      image: '/images/races/Sandwing-Peskokrili-menu.png',
+    },
+    {
+      id: 'skywing',
+      name: 'SkyWing / Nebokrili',
+      image: '/images/races/Skywing-Nebokrili-menu.png',
+    },
+    {
+      id: 'icewing',
+      name: 'IceWing / Ledenokrili',
+      image: '/images/races/Icewing-Ledenokrili-menu.png',
+    },
+  ];
 
   return (
     <div className="p-6">
@@ -43,10 +50,13 @@ export default function Rase() {
 
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
         {races.map((race) => (
-          <RaceCard key={race.name} name={race.name} image={race.image} />
+          <Link to={`/rase/${race.id}`} key={race.id}>
+            <RaceCard name={race.name} image={race.image} />
+          </Link>
         ))}
       </div>
     </div>
   );
 }
+
 
