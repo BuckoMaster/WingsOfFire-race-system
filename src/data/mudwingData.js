@@ -39,16 +39,17 @@ Na mapama Pyrrhije, njihova teritorija obuhvata severne regione u okolini jezera
 `,
 
   zanimljivosti: [
-    "Tajanstveni ritual parenja: Blatokrili praktikuju parenje u potpunom mraku.",
-    "Jedinstvena kraljevska lojalnost: Nijedna Blatokrila kraljica nije bila izazvana.",
-    "Zmajevi iz crvenih jaja imaju toplotnu otpornost i veštine u zanatima.",
-    "Ako vođa-legla pogine, sledeći najstariji ga zamenjuje.",
-    "Gnezda su topla i napravljena za prirodnu inkubaciju.",
-    "Legla sadrže 5–7 članova.",
-    "Organizuju takmičenja između legla.",
-    "Zajedno grade strukture u tišini i slozi.",
-    "Imena se dodeljuju tek kada zmaj razume vrednosti svog plemena."
-  ],
+  "Tajanstveni ritual parenja: Blatokrili praktikuju parenje u potpunom mraku, u ceremonijama koje se održavaju u tišini i izolaciji. Učesnici često ne znaju identitet svog partnera, a ceo čin se temelji na instinktu, mirisu i hemijskoj povezanosti — ne površnim osobinama.",
+  "Jedinstvena kraljevska lojalnost: Za razliku od mnogih drugih zmajevskih plemena, nijedna Blatokrila kraljica nije bila izazvana od strane svojih sestara. Snažne emocionalne veze među članovima legla sprečavaju rivalstvo i podrivaju borbu za moć, osnažujući unutrašnju stabilnost plemena.",
+  "Kraljevske veštine u kuhinji i radionici: Zmajevi koji se izlegnu iz krvavo-crvenog jajeta, otporni na toplotu, često pokazuju izuzetne sposobnosti u kulinarstvu, obradi stakla i metala. Mogu direktno dodirivati vrele površine, pa im je pečenje, kovanje ili duvanje stakla gotovo prirodno. A kako obožavaju hranu — nije ni čudo što su majstori dobre gozbe!",
+  "Nasleđivanje u leglu: Ako vođa-legla (najstariji) pogine, sledeći po starosti automatski preuzima odgovornost. Redosled rođenja nije samo simboličan — on definiše čitavu strukturu njihovog života.",
+  "Gnezda sa termalnim inkubacijama: Blatokrilih gnezda nisu samo gomila blata. Prave se od kamena i bilja, a obično su okružena toplim blatom koje služi kao prirodni inkubator za jaja.",
+  "Broj iz legla: Prema vodiču, Blatokrili se najčešće izlegu u grupama od 5 do 7 zmajića, koji zajedno čine neraskidivu jedinicu kroz ceo život.",
+  "Takmičenja među leglima: Blatokrili organizuju prijateljska takmičenja među leglima — u letenju, snazi, inteligenciji, pa čak i u lovu. Ova nadmetanja jačaju međusobno poverenje, ali i unapređuju veštine celokupnog plemena.",
+  "Zajednička izgradnja: Kada treba sagraditi veću strukturu, više legla često sarađuje. Nije retkost videti desetine Blatokrilih kako zajedno oblikuju kulama slične građevine od gline, u savršenom ritmu i bez puno reči.",
+  "Imena kao čast, ne pravo: Mladi Blatokrili ne dobijaju ime odmah po rođenju. Imena im dodeljuje leglo tek kad savladaju osnovnu kulturu i dokažu da su razumeli vrednosti plemena. Ta imena su simbolična — poput “Glineni” ili “Grumen” — i u potpunosti odražavaju njihovu suštinu i poreklo."
+],
+
 
   sistemImena: `Kakvo ime dati Blatokrilu?
 Imena su zvučno prilagođena i inspirišu se prirodom. Na primer:
