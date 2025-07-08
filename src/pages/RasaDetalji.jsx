@@ -33,11 +33,35 @@ export default function RasaDetalji() {
     <div className="p-6 max-w-4xl mx-auto space-y-10">
       <h1 className="text-4xl font-bold text-purple-700 text-center">{rasa.ime}</h1>
 
+      <img
+        src="/images/races/Mudwing-Full.png"
+        alt="Blatokrili"
+        className="mx-auto w-full max-w-md rounded-md shadow-md"
+      />
+
+      <div className="bg-yellow-100 border-l-4 border-yellow-500 p-4 rounded-md shadow-sm">
+        <p className="text-yellow-800 italic">
+          🐾 Bucko kaže: “Blatokrili možda ne blistaju kao neki drugi zmajevi, ali kad ti treba neko da te izvuče iz nevolje — zovi nas. I ponesi užinu.”
+        </p>
+      </div>
+
       <section>
         <h2 className="text-2xl font-semibold mb-2">🧍 {rasa.opisIzgled.split('\n')[0]}</h2>
         <p className="whitespace-pre-line text-gray-800">
           {rasa.opisIzgled.split('\n').slice(1).join('\n')}
         </p>
+
+        <div className="mt-6 border rounded-lg p-4 bg-stone-50 shadow-sm">
+          <h3 className="text-xl font-medium mb-2">🎨 Moguće boje Blatokrilih</h3>
+          <img
+            src="/images/races/Mudwing-ColorVariants.png"
+            alt="Varijacije boja Blatokrilih"
+            className="w-full max-w-2xl mx-auto rounded"
+          />
+          <p className="text-sm text-gray-600 text-center mt-1">
+            Tipične nijanse: braon, ćilibarska, lešnikasta i blatna.
+          </p>
+        </div>
       </section>
 
       <section>
@@ -61,7 +85,7 @@ export default function RasaDetalji() {
         </p>
       </section>
 
-      <section>
+      <section className="bg-amber-50 p-4 rounded-lg shadow-sm">
         <h2 className="text-2xl font-semibold mb-2">🎯 Zanimljivosti o Blatokrilima</h2>
         <ul className="list-disc list-inside space-y-1 text-gray-800">
           {rasa.zanimljivosti.map((fact, index) => (
@@ -94,5 +118,7 @@ export default function RasaDetalji() {
     </div>
   );
 }
+
+
 
 
