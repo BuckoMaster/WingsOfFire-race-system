@@ -6,6 +6,17 @@ export default function Layout() {
   const [buckoSpeaking, setBuckoSpeaking] = useState(true);
   const location = useLocation();
 
+  const buckoPoruke = {
+    '/': 'Ćao, dobrodošao na glavni meni rasa! 🐾 Ovde možeš da istražiš sve zmajeve.',
+    '/kviz': 'Ovo je kviz! Odgovori iskreno i saznaćeš kojoj rasi zmajeva najviše ličiš!',
+    '/beleske': 'U beleškama možeš zapisivati ideje, zaplete i zmajevske misli 📝',
+    '/karakter': 'Ovde kreiraš svog zmajevskog lika! Imaćeš ime, pozadinu i rasu 🐉',
+    '/rase/mudwing': 'Blatokrili možda ne mirišu na cveće, ali su verni kao stena. Ako te zovemo leglo — ti si naš zauvek.',
+    // Dodaj i druge putanje ovde kad budeš želeo!
+  };
+
+  const buckoTekst = buckoPoruke[location.pathname];
+
   return (
     <div className="flex min-h-screen bg-gradient-to-br from-indigo-100 to-purple-200 font-sans relative">
       {/* Sidebar navigacija */}
@@ -25,7 +36,7 @@ export default function Layout() {
       </main>
 
       {/* Bucko helper */}
-      {buckoSpeaking && (
+      {buckoSpeaking && buckoTekst && (
         <motion.div
           initial={{ y: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -39,18 +50,7 @@ export default function Layout() {
           />
           <div>
             <p className="text-gray-800 font-medium text-sm">
-              {location.pathname === '/' && (
-                <>Ćao, dobrodošao na glavni meni rasa! 🐾 Ovde možeš da istražiš sve zmajeve.</>
-              )}
-              {location.pathname === '/kviz' && (
-                <>Ovo je kviz! Odgovori iskreno i saznaćeš kojoj rasi zmajeva najviše ličiš!</>
-              )}
-              {location.pathname === '/beleske' && (
-                <>U beleškama možeš zapisivati ideje, zaplete i zmajevske misli 📝</>
-              )}
-              {location.pathname === '/karakter' && (
-                <>Ovde kreiraš svog zmajevskog lika! Imaćeš ime, pozadinu i rasu 🐉</>
-              )}
+              {buckoTekst}
             </p>
             <button
               onClick={() => setBuckoSpeaking(false)}
@@ -67,10 +67,11 @@ export default function Layout() {
           onClick={() => setBuckoSpeaking(true)}
           className="fixed bottom-4 right-4 bg-yellow-300 hover:bg-yellow-400 transition px-3 py-2 rounded-lg shadow z-40 text-sm font-medium"
         >
-          🐝 Otvori Bucka ponovo
+          🐾 Otvori Bucka ponovo
         </button>
       )}
     </div>
   );
 }
+
 
